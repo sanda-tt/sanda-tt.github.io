@@ -5,13 +5,25 @@
     <url>/2025/12/01/%E6%89%91%E5%85%8B%E7%89%8C/</url>
     <content><![CDATA[<p>C语言结课作业的扑克牌代码</p>
 <p>学习了从语言代码对颜色的调用和图形绘制</p>
-<p><img src="/../img/content-pkp1.png" alt="演示图片">  &lt;!–</p>
+<p><img src="/../images/content-pkp1.png" alt="演示图片">  &lt;!–</p>
 ]]></content>
       <categories>
         <category>daily life</category>
       </categories>
       <tags>
         <tag>c语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Loomo机器人的课程毕设</title>
+    <url>/2025/10/25/Loomo/</url>
+    <content><![CDATA[<h1 id="loomo机器人"><a href="#loomo机器人" class="headerlink" title="loomo机器人"></a>loomo机器人</h1><blockquote>
+<p>有空再说</p>
+</blockquote>
+<p><a href="https://github.com/sanda-tt/Loomo">https://github.com/sanda-tt/Loomo</a></p>
+]]></content>
+      <tags>
+        <tag>app</tag>
       </tags>
   </entry>
   <entry>
@@ -22,18 +34,6 @@
 </blockquote>
 <p><a href="https://github.com/sanda-tt/android-Ebblinghaus.memory-notes%22github%E7%9A%84%E7%BD%91%E5%9D%80%E9%93%BE%E6%8E%A5%22">艾宾浩斯</a></p>
 <p><a href="https://github.com/sanda-tt/android-Ebblinghaus.memory-notes">https://github.com/sanda-tt/android-Ebblinghaus.memory-notes</a></p>
-]]></content>
-      <tags>
-        <tag>app</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Loomo机器人的课程毕设</title>
-    <url>/2025/10/25/Loomo/</url>
-    <content><![CDATA[<h1 id="loomo机器人"><a href="#loomo机器人" class="headerlink" title="loomo机器人"></a>loomo机器人</h1><blockquote>
-<p>有空再说</p>
-</blockquote>
-<p><a href="https://github.com/sanda-tt/Loomo">https://github.com/sanda-tt/Loomo</a></p>
 ]]></content>
       <tags>
         <tag>app</tag>
