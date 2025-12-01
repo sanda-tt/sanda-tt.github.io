@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>我不是赌王之扑克牌 | Hexo</title>
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
+    <title>我不是赌王之扑克牌 | Sanda的个人小窝</title>
+    <meta name="author" content="sanda-tt" />
+    <meta name="description" content="用代码画出向日葵的忧伤" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
@@ -49,6 +49,26 @@
 <link rel="stylesheet" href="/css/main.css" />
 
 <meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<!-- 鼠标点击特效 (烟花) -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+  // 简单的点击烟花效果逻辑
+  document.addEventListener('click', function(e) {
+    confetti({
+      origin: {
+        x: e.clientX / window.innerWidth,
+        y: e.clientY / window.innerHeight
+      },
+      spread: 80,
+      particleCount: 60,
+      scalar: 0.8
+    });
+  });
+</script>
+
+
 <body>
     <div id="layout">
         <transition name="fade">
@@ -63,7 +83,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HEXO</span>
+            <span>SANDA的个人小窝</span>
         </a>
         
         <a href="/">
@@ -100,7 +120,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+            <span>&emsp;SANDA的个人小窝</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -198,7 +218,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/c%E8%AF%AD%E8%A8%80/" style="color: #ffa2c4">
+                <a href="/tags/c%E8%AF%AD%E8%A8%80/" style="color: #00bcd4">
                     c语言
                 </a>
             </span>
@@ -226,11 +246,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2025 Hexo
+            2022 - 2025 Sanda的个人小窝
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;John Doe
+            &commat;sanda-tt
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
