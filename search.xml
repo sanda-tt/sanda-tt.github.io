@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>my first blog</title>
-    <url>/2025/10/11/my-first-blog/</url>
-    <content><![CDATA[<h1 id="重生之我在科协打j"><a href="#重生之我在科协打j" class="headerlink" title="重生之我在科协打j"></a>重生之我在科协打j</h1>]]></content>
-      <tags>
-        <tag>daily life</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试</title>
-    <url>/2025/11/29/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Loomo机器人的课程毕设</title>
-    <url>/2025/10/25/Loomo/</url>
-    <content><![CDATA[<h1 id="loomo机器人"><a href="#loomo机器人" class="headerlink" title="loomo机器人"></a>loomo机器人</h1><blockquote>
-<p>有空再说</p>
-</blockquote>
-<p><a href="https://github.com/sanda-tt/Loomo">https://github.com/sanda-tt/Loomo</a></p>
+    <title>我不是赌王之扑克牌</title>
+    <url>/2025/12/01/%E6%89%91%E5%85%8B%E7%89%8C/</url>
+    <content><![CDATA[<p>C语言结课作业的扑克牌代码</p>
+<p>学习了从语言代码对颜色的调用和图形绘制</p>
+<p><img src="/../img/content-pkp1.png" alt="演示图片">  &lt;!–</p>
 ]]></content>
+      <categories>
+        <category>daily life</category>
+      </categories>
       <tags>
-        <tag>app</tag>
+        <tag>c语言</tag>
       </tags>
   </entry>
   <entry>
@@ -39,17 +28,28 @@
       </tags>
   </entry>
   <entry>
-    <title>我不是赌王之扑克牌</title>
-    <url>/2025/12/01/%E6%89%91%E5%85%8B%E7%89%8C/</url>
-    <content><![CDATA[<p>C语言结课作业的扑克牌代码</p>
-<p>学习了从语言代码对颜色的调用和图形绘制</p>
-<p><img src="/../img/content-pkp1.png" alt="演示图片">  &lt;!–</p>
+    <title>Loomo机器人的课程毕设</title>
+    <url>/2025/10/25/Loomo/</url>
+    <content><![CDATA[<h1 id="loomo机器人"><a href="#loomo机器人" class="headerlink" title="loomo机器人"></a>loomo机器人</h1><blockquote>
+<p>有空再说</p>
+</blockquote>
+<p><a href="https://github.com/sanda-tt/Loomo">https://github.com/sanda-tt/Loomo</a></p>
 ]]></content>
-      <categories>
-        <category>daily life</category>
-      </categories>
       <tags>
-        <tag>c语言</tag>
+        <tag>app</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2025/11/29/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>my first blog</title>
+    <url>/2025/10/11/my-first-blog/</url>
+    <content><![CDATA[<h1 id="重生之我在科协打j"><a href="#重生之我在科协打j" class="headerlink" title="重生之我在科协打j"></a>重生之我在科协打j</h1>]]></content>
+      <tags>
+        <tag>daily life</tag>
       </tags>
   </entry>
 </search>
