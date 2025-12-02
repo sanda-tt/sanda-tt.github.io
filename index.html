@@ -48,26 +48,45 @@
 
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
-<!-- 鼠标点击特效 (烟花) -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-  // 简单的点击烟花效果逻辑
-  document.addEventListener('click', function(e) {
-    confetti({
-      origin: {
-        x: e.clientX / window.innerWidth,
-        y: e.clientY / window.innerHeight
-      },
-      spread: 80,
-      particleCount: 60,
-      scalar: 0.8
-    });
-  });
-</script>
-
-
 <body>
+    <!-- 鼠标点击特效 (烟花) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+      // 简单的点击烟花效果逻辑
+      document.addEventListener('click', function(e) {
+        // 如果点击的是弹窗遮罩或图片，不触发烟花，避免视线干扰
+        if (e.target.id === 'custom-popup-mask' || e.target.id === 'custom-popup-img') return;
+
+        confetti({
+          origin: {
+            x: e.clientX / window.innerWidth,
+            y: e.clientY / window.innerHeight
+          },
+          spread: 80,
+          particleCount: 60,
+          scalar: 0.8
+        });
+      });
+
+      // 弹窗显示函数
+      function showPopup(src) {
+        var mask = document.createElement('div');
+        mask.id = 'custom-popup-mask';
+        mask.style.cssText = "position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:pointer;";
+        mask.onclick = function() { document.body.removeChild(mask); };
+        
+        var img = document.createElement('img');
+        img.id = 'custom-popup-img';
+        img.src = src;
+        img.style.cssText = "max-width:90%;max-height:90%;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,0.5);cursor:default;";
+        // 阻止点击图片消失
+        img.onclick = function(e) { e.stopPropagation(); };
+        
+        mask.appendChild(img);
+        document.body.appendChild(mask);
+      }
+    </script>
+
     <div id="layout">
         <transition name="fade">
             <div id="loading" v-show="loading">
@@ -215,6 +234,54 @@
         
 
 <div class="post">
+    <a href="/2025/12/02/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E5%8E%86%E7%A8%8B/">
+        <h2 class="post-title">博客创建历程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                未分类
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/12/2
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%A0%87%E7%AD%BE/" style="color: #03a9f4">标签</a>
+        </span>
+        
+    </div>
+    <a href="/2025/12/02/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E5%8E%86%E7%A8%8B/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2025/12/01/%E6%89%91%E5%85%8B%E7%89%8C/">
         <h2 class="post-title">我不是赌王之扑克牌</h2>
     </a>
@@ -258,7 +325,7 @@
         
         <span class="tag">
             
-            <a href="/tags/c%E8%AF%AD%E8%A8%80/" style="color: #00a596">c语言</a>
+            <a href="/tags/c%E8%AF%AD%E8%A8%80/" style="color: #ffa2c4">c语言</a>
         </span>
         
     </div>
@@ -332,7 +399,7 @@
         
         <span class="tag">
             
-            <a href="/tags/app/" style="color: #ff7d73">app</a>
+            <a href="/tags/app/" style="color: #ffa2c4">app</a>
         </span>
         
     </div>
@@ -414,7 +481,7 @@
         
         <span class="tag">
             
-            <a href="/tags/daily-life/" style="color: #ffa2c4">daily life</a>
+            <a href="/tags/daily-life/" style="color: #00bcd4">daily life</a>
         </span>
         
     </div>
@@ -441,14 +508,62 @@
         </div>
         <div class="name">sanda-tt</div>
         <div class="description">
-            <p>用代码画出向日葵的忧伤<br>用示波器调出日落的余晖</p>
+            <p>用代码画出向日葵的忧伤</p>
 
+        </div>
+        
+        <div class="icon-links">
+            
+            <span class="icon-link">
+                
+                    <!-- 正常链接，原样输出 -->
+                    <a href="https://github.com/sanda-tt" target="_blank">
+                        <i class="fa-brands fa-github fa-fw"></i>
+                    </a>
+                
+            </span>
+            
+            <span class="icon-link">
+                
+                    <!-- 正常链接，原样输出 -->
+                    <a href="https://gitee.com/sanda-tt/" target="_blank">
+                        <i class="fa-brands fa-git-alt fa-fw"></i>
+                    </a>
+                
+            </span>
+            
+            <span class="icon-link">
+                
+                    <!-- 正常链接，原样输出 -->
+                    <a href="mailto:sandatt517@outlook.com" target="_blank">
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </a>
+                
+            </span>
+            
+            <span class="icon-link">
+                
+                    <!-- 如果是弹窗链接，则触发点击事件 -->
+                    <a href="javascript:;" onclick="showPopup('/images/weixin_qr.png')">
+                        <i class="fa-brands fa-weixin fa-fw"></i>
+                    </a>
+                
+            </span>
+            
+            <span class="icon-link">
+                
+                    <!-- 如果是弹窗链接，则触发点击事件 -->
+                    <a href="javascript:;" onclick="showPopup('/images/qq_qr.jpg')">
+                        <i class="fa-brands fa-qq fa-fw"></i>
+                    </a>
+                
+            </span>
+            
         </div>
         
         
     </div>
 </div>
-
     </div>
     
 </div>

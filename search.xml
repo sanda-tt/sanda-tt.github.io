@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试</title>
-    <url>/2025/11/29/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[]]></content>
+    <title>Loomo机器人的课程毕设</title>
+    <url>/2025/10/25/Loomo/</url>
+    <content><![CDATA[<h1 id="loomo机器人"><a href="#loomo机器人" class="headerlink" title="loomo机器人"></a>loomo机器人</h1><blockquote>
+<p>有空再说</p>
+</blockquote>
+<p><a href="https://github.com/sanda-tt/Loomo">https://github.com/sanda-tt/Loomo</a></p>
+]]></content>
+      <tags>
+        <tag>app</tag>
+      </tags>
   </entry>
   <entry>
     <title>my first blog</title>
@@ -28,15 +35,14 @@
       </tags>
   </entry>
   <entry>
-    <title>Loomo机器人的课程毕设</title>
-    <url>/2025/10/25/Loomo/</url>
-    <content><![CDATA[<h1 id="loomo机器人"><a href="#loomo机器人" class="headerlink" title="loomo机器人"></a>loomo机器人</h1><blockquote>
-<p>有空再说</p>
-</blockquote>
-<p><a href="https://github.com/sanda-tt/Loomo">https://github.com/sanda-tt/Loomo</a></p>
-]]></content>
+    <title>博客创建历程</title>
+    <url>/2025/12/02/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
       <tags>
-        <tag>app</tag>
+        <tag>标签</tag>
       </tags>
   </entry>
   <entry>
@@ -51,5 +57,10 @@
       <tags>
         <tag>app</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2025/11/29/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

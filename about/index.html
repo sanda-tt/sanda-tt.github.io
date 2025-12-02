@@ -50,26 +50,45 @@
 
 <meta name="generator" content="Hexo 8.1.1"></head>
 
-
-<!-- 鼠标点击特效 (烟花) -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script>
-  // 简单的点击烟花效果逻辑
-  document.addEventListener('click', function(e) {
-    confetti({
-      origin: {
-        x: e.clientX / window.innerWidth,
-        y: e.clientY / window.innerHeight
-      },
-      spread: 80,
-      particleCount: 60,
-      scalar: 0.8
-    });
-  });
-</script>
-
-
 <body>
+    <!-- 鼠标点击特效 (烟花) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+      // 简单的点击烟花效果逻辑
+      document.addEventListener('click', function(e) {
+        // 如果点击的是弹窗遮罩或图片，不触发烟花，避免视线干扰
+        if (e.target.id === 'custom-popup-mask' || e.target.id === 'custom-popup-img') return;
+
+        confetti({
+          origin: {
+            x: e.clientX / window.innerWidth,
+            y: e.clientY / window.innerHeight
+          },
+          spread: 80,
+          particleCount: 60,
+          scalar: 0.8
+        });
+      });
+
+      // 弹窗显示函数
+      function showPopup(src) {
+        var mask = document.createElement('div');
+        mask.id = 'custom-popup-mask';
+        mask.style.cssText = "position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:pointer;";
+        mask.onclick = function() { document.body.removeChild(mask); };
+        
+        var img = document.createElement('img');
+        img.id = 'custom-popup-img';
+        img.src = src;
+        img.style.cssText = "max-width:90%;max-height:90%;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,0.5);cursor:default;";
+        // 阻止点击图片消失
+        img.onclick = function(e) { e.stopPropagation(); };
+        
+        mask.appendChild(img);
+        document.body.appendChild(mask);
+      }
+    </script>
+
     <div id="layout">
         <transition name="fade">
             <div id="loading" v-show="loading">
@@ -205,7 +224,7 @@
     
     <div class="content" v-pre>
         <h1 id="a-man-who-wander-in-UESTC"><a href="#a-man-who-wander-in-UESTC" class="headerlink" title="a man who wander in UESTC"></a>a man who wander in UESTC</h1><blockquote>
-<p>call me at <a href="mailto:&#115;&#97;&#110;&#x64;&#x61;&#116;&#x74;&#x35;&#x31;&#x37;&#x40;&#x6f;&#117;&#x74;&#x6c;&#x6f;&#111;&#x6b;&#46;&#x63;&#111;&#x6d;">sandatt517@outlook.com</a>,or,<a href="mailto:&#x31;&#50;&#x33;&#x39;&#x33;&#x36;&#57;&#x30;&#56;&#x36;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;">1239369086@qq.com</a></p>
+<p>call me at <a href="mailto:&#x73;&#x61;&#110;&#100;&#97;&#x74;&#116;&#x35;&#x31;&#55;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#x6f;&#109;">sandatt517@outlook.com</a>,or,<a href="mailto:&#x31;&#50;&#x33;&#x39;&#x33;&#x36;&#x39;&#48;&#56;&#x36;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">1239369086@qq.com</a></p>
 </blockquote>
 <p>分享我的日常和技术学习</p>
 
